@@ -2,7 +2,7 @@
  * $Id: editor_plugin_src.js 677 2008-03-07 13:52:41Z spocke $
  *
  * @author Moxiecode
- * @copyright Copyright © 2004-2008, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright ï¿½ 2004-2008, Moxiecode Systems AB, All rights reserved.
  */
 
 (function() {
@@ -15,8 +15,7 @@
 					return;
 
 				ed.windowManager.open({
-				//	file : url + '/image.htm',
-					file : '/photo/photo.html?newimage&theme=basic',
+					file : '//' + chemin + 'photo/photo.html?newimage&theme=basic',
 					width : 480 + parseInt(ed.getLang('advimage.delta_width', 0)),
 					height : 385 + parseInt(ed.getLang('advimage.delta_height', 0)),
 					inline : 1
@@ -35,7 +34,7 @@
 		getInfo : function() {
 			return {
 				longname : 'Ecodev image',
-				author : 'ecodev sàrl',
+				author : 'ecodev sÃ rl',
 				authorurl : 'http://ecodev.ch',
 				infourl : 'http://ecodev.ch',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion

@@ -15,7 +15,6 @@
 					return;
 
 				ed.windowManager.open({
-				//	file : url + '/image.htm',
 					file : '//' + chemin + '/fichier/fichier.html?newfichier&theme=basic',
 					width : 480 + parseInt(ed.getLang('advimage.delta_width', 0)),
 					height : 385 + parseInt(ed.getLang('advimage.delta_height', 0)),
