@@ -8,5 +8,10 @@ h2. Installation
 
 # create a database with help of sql/yopyop.sql
 # copy include/init/config-sample.php to include/init/config.php and edit it
-# give write access to include/tpl/templates_c/ (eg: chmod o+w include/tpl/templates_c/ )
+# give write access to following directories:  (eg: chmod o+w include/tpl/templates_c/ )
+## include/tpl/templates_c/
+## htdocs/utile/images/divers/
+## htdocs/utile/images/divers/moyennes/
+## htdocs/utile/images/divers/perso/
+## htdocs/utile/images/divers/vignettes/
 # default login and password is "admin" and "soleil"
