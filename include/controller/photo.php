@@ -775,13 +775,13 @@ if ($action=='get') {
 			$lienVignette = $photoManager->getLienPerso($imagePath);
 			
 			if ($position=='d') {
-				$htmlImage = "'<a href=\"http://".$_SERVER["SERVER_NAME"]."/".$imagePath."\"><img src=\"http://".$_SERVER["SERVER_NAME"]."/".$lienVignette."\" alt=\"".$nomOriginal."\" style=\"float:right; margin: 0 0 1em 1em;\" /></a>'";
+				$htmlImage = "'<a href=\"//".$serveur."/".$imagePath."\"><img src=\"//".$serveur."/".$lienVignette."\" alt=\"".$nomOriginal."\" style=\"float:right; margin: 0 0 1em 1em;\" /></a>'";
 			}elseif ($position=='g') {
-				$htmlImage = "'<a href=\"http://".$_SERVER["SERVER_NAME"]."/".$imagePath."\"><img src=\"http://".$_SERVER["SERVER_NAME"]."/".$lienVignette."\" alt=\"".$nomOriginal."\" style=\"float:left; margin: 0 1em 1em 0;\" /></a>'";
+				$htmlImage = "'<a href=\"//".$serveur."/".$imagePath."\"><img src=\"//".$serveur."/".$lienVignette."\" alt=\"".$nomOriginal."\" style=\"float:left; margin: 0 1em 1em 0;\" /></a>'";
 			}elseif ($position=='c') {
-				$htmlImage = "'<a href=\"http://".$_SERVER["SERVER_NAME"]."/".$imagePath."\"><img src=\"http://".$_SERVER["SERVER_NAME"]."/".$lienVignette."\" alt=\"".$nomOriginal."\" style=\"display:block; margin:0 auto;\" /></a>'";
+				$htmlImage = "'<a href=\"//".$serveur."/".$imagePath."\"><img src=\"//".$serveur."/".$lienVignette."\" alt=\"".$nomOriginal."\" style=\"display:block; margin:0 auto;\" /></a>'";
 			}else{
-				$htmlImage = "'<a href=\"http://".$_SERVER["SERVER_NAME"]."/".$imagePath."\"><img src=\"http://".$_SERVER["SERVER_NAME"]."/".$lienVignette."\" alt=\"".$nomOriginal."\"/></a>'";
+				$htmlImage = "'<a href=\"//".$serveur."/".$imagePath."\"><img src=\"//".$serveur."/".$lienVignette."\" alt=\"".$nomOriginal."\"/></a>'";
 			}
 			
 			

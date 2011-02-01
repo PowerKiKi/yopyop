@@ -27,4 +27,7 @@ global $theme;
 
 $theme = ''; // koudou, yop, girafe, menhir, chateau, basic, no
 
+// Path to image magick binary, eg: /usr/local/bin/convert or /usr/bin/convert
+$imageMagickPath = 'convert';
+
 ?>

@@ -297,12 +297,12 @@ function parseEmail($chaineSource){
 	}
 
 function creeVignette($imgpath, $thpath) {
-
+		global $imageMagickPath;
 		$quality=85;
 		$imageInfo = getimagesize($imgpath);
 		$width = $imageInfo[0] * THUMBNAIL_HEIGHT / $imageInfo[1];
 		$height = THUMBNAIL_HEIGHT;
-		$command = "/usr/local/bin/convert -thumbnail ".$width."x".$height." -quality $quality \"$imgpath\" \"$thpath\"";
+		$command = "$imageMagickPath -thumbnail ".$width."x".$height." -quality $quality \"$imgpath\" \"$thpath\"";
 		exec($command);
 	}
 	

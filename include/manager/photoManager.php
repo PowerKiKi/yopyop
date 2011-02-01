@@ -404,7 +404,8 @@ class photoManager {
  		}
 		$thpath = $this->getLienVignette($imagePath);
 		
-		$commande = "/usr/local/bin/convert -thumbnail ".$width."x".$height." -quality ".$quality." \"".$imagePath."\" \"".$thpath."\"";
+		global $imageMagickPath;
+		$commande = "$imageMagickPath -thumbnail ".$width."x".$height." -quality ".$quality." \"".$imagePath."\" \"".$thpath."\"";
 		exec($commande);
 	}
 	
@@ -423,7 +424,8 @@ class photoManager {
  		}
 		$thpath = $this->getLienMoyenne($imagePath);
 		
-		$commande = "/usr/local/bin/convert -thumbnail ".$width."x".$height." -quality ".$quality." \"".$imagePath."\" \"".$thpath."\"";
+		global $imageMagickPath;
+		$commande = "$imageMagickPath -thumbnail ".$width."x".$height." -quality ".$quality." \"".$imagePath."\" \"".$thpath."\"";
 		exec($commande);
 	}
 	
@@ -446,7 +448,9 @@ class photoManager {
 			$width=320;
 			$height=240;
 		}
-		$commande = "/usr/local/bin/convert -thumbnail ".$width."x".$height." -quality ".$quality." \"".$imagePath."\" \"".$thpath."\"";
+		
+		global $imageMagickPath;
+		$commande = "$imageMagickPath -thumbnail ".$width."x".$height." -quality ".$quality." \"".$imagePath."\" \"".$thpath."\"";
 		exec($commande);
 	}
 	
